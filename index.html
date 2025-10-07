@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Kanika - Will You Marry Me?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="cake-emojis">
+                <div class="cake cake-1">🎂</div>
+                <div class="cake cake-2">🎂</div>
+                <div class="cake cake-3">🎂</div>
+                <div class="cake cake-4">🎂</div>
+                <div class="cake cake-5">🎂</div>
+            </div>
+            <h2 class="loading-text">Loading your surprise...</h2>
+            <div class="loading-sparkles">
+                <div class="loading-sparkle">✨</div>
+                <div class="loading-sparkle">💖</div>
+                <div class="loading-sparkle">✨</div>
+                <div class="loading-sparkle">💖</div>
+                <div class="loading-sparkle">✨</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website Content -->
+    <div id="main-content" class="main-content hidden">
+        
+        <!-- Floating Hearts Background -->
+        <div class="hearts-container">
+            <div class="heart heart-1">♥</div>
+            <div class="heart heart-2">♥</div>
+            <div class="heart heart-3">♥</div>
+            <div class="heart heart-4">♥</div>
+            <div class="heart heart-5">♥</div>
+            <div class="heart heart-6">♥</div>
+        </div>
+
+        <!-- Particle System -->
+        <div class="particles-container">
+            <div class="particle diamond">💎</div>
+            <div class="particle star">⭐</div>
+            <div class="particle diamond">💎</div>
+            <div class="particle star">⭐</div>
+            <div class="particle diamond">💎</div>
+            <div class="particle star">⭐</div>
+        </div>
+
+        <!-- Hidden Audio Players -->
+        <audio id="birthday-song" loop style="display: none;">
+            <source src="song.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="love-song" style="display: none;">
+            <source src="love.m4a" type="audio/mp4">
+        </audio>
+
+        <!-- Hero Welcome Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Happy Birthday, Kanika!</h1>
+                <p class="hero-subtitle">Every Moment With You is My Favorite Moment...</p>
+                
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow">↓</div>
+                    <p>Scroll Down for memories</p>
+                </div>
+            </div>
+            <div class="sparkles">
+                <div class="sparkle sparkle-1">✨</div>
+                <div class="sparkle sparkle-2">💫</div>
+                <div class="sparkle sparkle-3">✨</div>
+                <div class="sparkle sparkle-4">💫</div>
+            </div>
+        </section>
+
+        <!-- Photo Timeline Section -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Our Beautiful Journey Together</h2>
+                
+                <div class="photo-timeline">
+                    <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="1.jpg" alt="Our hearts connected" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Our hearts connected as one</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item timeline-item-right" data-aos="fade-left">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="2.jpg" alt="Video call moment" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Even miles apart, love brings us close</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="3.jpg" alt="Elegant blue dress" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>You shine brighter than any star</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-right" data-aos="fade-left">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="4.jpg" alt="Intimate moment" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>In your arms, I found my peace</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="5.jpg" alt="Mirror selfie" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Your beauty takes my breath away</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-right" data-aos="fade-left">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="6.jpg" alt="Stylish sunglasses" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Confidence looks perfect on you</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="7.jpg" alt="Glamorous moment" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>You make every moment elegant</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-right" data-aos="fade-left">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="8.jpg" alt="Peaceful moment" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Peaceful moments with you are precious</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="9.jpg" alt="Happy couple" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Your smile is my favorite sight</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-right" data-aos="fade-left">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="10.jpg" alt="Adventure together" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Adventures are better with you</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item timeline-item-left" data-aos="fade-right">
+                        <div class="timeline-marker">♥</div>
+                        <div class="timeline-content">
+                            <div class="photo-container">
+                                <img src="11.jpg" alt="Fun times" class="timeline-photo">
+                                <div class="photo-overlay">
+                                    <h3>Every day with you is a celebration</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Memories Section -->
+    <section class="video-memories-section">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Moments in Motion</h2>
+            <div class="video-grid">
+                <div class="video-card" data-aos="fade-up">
+                    <div class="video-container">
+                        <video id="video1" preload="metadata">
+                            <source src="video_01.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="custom-video-controls">
+                            <button class="play-pause-btn" data-video="video1">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon">⏸</span>
+                            </button>
+                        </div>
+                        <div class="video-overlay">
+                            <h3>Our beautiful moments together</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-aos="fade-up">
+                    <div class="video-container">
+                        <video id="video2" preload="metadata">
+                            <source src="lassi.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="custom-video-controls">
+                            <button class="play-pause-btn" data-video="video2">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon">⏸</span>
+                            </button>
+                        </div>
+                        <div class="video-overlay">
+                            <h3>Sweet memories we've created</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card" data-aos="fade-up">
+                    <div class="video-container">
+                        <video id="video3" preload="metadata">
+                            <source src="video_02.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="custom-video-controls">
+                            <button class="play-pause-btn" data-video="video3">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon">⏸</span>
+                            </button>
+                        </div>
+                        <div class="video-overlay">
+                            <h3>The joy you bring to my life</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Enhanced Birthday Letter Section -->
+        <section class="letter-section">
+            <div class="container">
+                <h2 class="section-title">A Special Message For You</h2>
+                <div class="envelope-container">
+                    <div id="envelope" class="envelope closed">
+                        <div class="envelope-back">
+                            
+                        </div>
+                        <div class="envelope-front">
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-body">
+                                <p class="envelope-text">Click to Open</p>
+                            </div>
+                        </div>
+                        <div class="letter" id="letter">
+                            <div class="letter-content">
+                                <h3>My Dearest Kanika,</h3>
+                                <p>On this special day, I want you to know that you are the most beautiful, amazing, and precious person in my world. Every moment with you feels like a dream come true.</p>
+                                <p>Your smile lights up my darkest days, your laugh is my favorite melody, and your love gives my life meaning. I cannot imagine a future without you by my side.</p>
+                                <p>Happy Birthday, my love. You deserve all the happiness in the world, and I promise to spend every day making sure you feel as special as you truly are.</p>
+                                <div class="signature">Forever yours, with all my love 💕</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glamorous Proposal Section -->
+        <section class="proposal-section">
+            <div class="proposal-spotlight"></div>
+            <div class="proposal-particles">
+                <div class="proposal-particle">✨</div>
+                <div class="proposal-particle">💎</div>
+                <div class="proposal-particle">✨</div>
+                <div class="proposal-particle">💎</div>
+                <div class="proposal-particle">✨</div>
+            </div>
+            <div class="container">
+                <div class="proposal-content">
+                    <h2 class="proposal-title">Kanika, Will You Stay With Me?</h2>
+                    <p class="proposal-subtitle">You are my everything, my forever...</p>
+                    
+                    <div class="proposal-buttons">
+                        <button id="yes-button-1" class="btn proposal-btn primary-proposal">
+                            <span class="heart-icon">♥</span>
+                            Yes, Forever!
+                        </button>
+                        <button id="yes-button-2" class="btn proposal-btn secondary-proposal">
+                            <span class="heart-icon">♥</span>
+                            Absolutely Yes!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Response Section -->
+        <section id="response-section" class="response-section hidden">
+            <div class="container">
+                <div class="response-content">
+                    <h2 class="response-title">You Said Yes! 🎉</h2>
+                    <p class="response-message">I can't wait to spend forever with you, creating countless more beautiful memories together.</p>
+                    
+                    <div class="response-form">
+                        <label for="love-message">Leave me a message (optional):</label>
+                        <textarea id="love-message" placeholder="Write something beautiful..."></textarea>
+                        <button id="send-message" class="btn btn--primary">Send My Love</button>
+                    </div>
+                    
+                    <div class="future-together">
+                        <h3>Our Future Awaits...</h3>
+                        <p>Here's to a lifetime of love, laughter, and endless adventures together. Happy Birthday, my future wife! ♥</p>
+                    </div>
+                </div>
+            </div>
+            <div id="celebration-confetti" class="confetti-container"></div>
+        </section>
+
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container" class="confetti-container"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
